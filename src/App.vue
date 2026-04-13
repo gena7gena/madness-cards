@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import MadnessStepColumn from './components/MadnessStepColumn.vue'
-import { mockMadnessSteps } from './data/mockMadness'
+import { madnessSteps } from './data/madness'
 </script>
 
 <template>
   <main class="layout">
     <header class="page-header">
-      <p class="eyebrow">Структура разворота</p>
+      <p class="eyebrow">Из markdown</p>
       <h1>Ступени безумия</h1>
       <p class="intro">
-        Пока без парсинга markdown: просто каркас страницы, где каждая ступень недостатков
-        стоит напротив соответствующей ступени преимуществ.
+        Каждая ступень недостатков стоит напротив соответствующей ступени преимуществ.
       </p>
     </header>
 
     <section class="board" aria-label="Ступени безумия">
       <div
-        v-for="pair in mockMadnessSteps"
+        v-for="pair in madnessSteps"
         :key="pair.drawbackStep.level"
         class="step-group"
       >

@@ -67,6 +67,7 @@ const sideTitle = props.side === 'drawback' ? 'Недостатки' : 'Преи
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
+  align-items: start;
 }
 
 .step-column-drawback .side-title {
